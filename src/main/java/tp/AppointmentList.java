@@ -45,15 +45,24 @@ public class AppointmentList {
      * @param index Index of the appointment to be deleted.
      */
     public Appointment deleteAppointment(int index) {
+<<<<<<< HEAD
         if (index <= 0 || index > appointments.size()) {
             return null;
         }
+=======
+>>>>>>> e8a22e36ae93e6b853dff89eb8c1215ae8212bef
         Appointment curr = appointments.get(index - 1);
         appointments.remove(index - 1);
         countAppointment -= 1;
         return curr;
     }
 
+    /**
+     * Get the list of appointment of a given doctor.
+     *
+     * @param id ID of the doctor.
+     * @return Appointment list of the given doctor.
+     */
     public AppointmentList getAppointmentListOfDoctorById(String id) {
         AppointmentList res = new AppointmentList();
         for (Appointment appointment : appointments) {
