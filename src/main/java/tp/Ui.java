@@ -55,7 +55,7 @@ public class Ui {
     }
 
     public void printAddHelp() {
-        String addDoctor = "add doctor /id ID /n NAME /ph PHONE /e EMAIL" + System.lineSeparator();
+        String addDoctor = "add doctor /id ID /n NAME /ph PHONE /e EMAIL /dep DEPARTMENT" + System.lineSeparator();
         String addPatient = "add patient /id ID /n NAME /ph PHONE /e EMAIL /s SYMPTOM /d DESCRIPTIONS"
                                     + System.lineSeparator();
         String addNurse = "add nurse /id ID /n NAME /ph PHONE /e EMAIL /t TITLE" + System.lineSeparator();
@@ -72,7 +72,7 @@ public class Ui {
         String listPatient = "list patient" + System.lineSeparator();
         String listNurse = "list nurse" + System.lineSeparator();
         String listWard = "list ward" + System.lineSeparator();
-        String sortAppointment = "sort appointment according to appointment time"
+        String sortAppointment = "sort appointment"
                                          + System.lineSeparator();
         String listAppointment = "list appointment" + System.lineSeparator();
         System.out.println("2. To list something:" + System.lineSeparator()
